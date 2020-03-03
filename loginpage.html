@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html style="background-color: darkgrey;">
+    <head >
+        <script>
+            function validate()
+            {
+                var username=document.getElementById("username");
+                var password=document.getElementById("password");
+                if(username.value=="saikiran"&& password.value=="19212")
+                {
+                    alert("username is your being directed to new html page");
+                    return true;
+                }
+                else
+                {
+                    alert("check your password or username")
+                    return false;
+                }
+            
+
+            }
+           
+
+        </script>
+    </head>
+    <body>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+        <form style="text-align: center;" onsubmit="return validate();" action="successful.html">
+           <fieldset><legend>LOGIN PAGE</legend>
+            username:
+            <input type="text" id="username">
+            <br>
+            <br>
+            password:
+            <input type="password" id="password">
+            <br>
+            <br>
+            <button type="submit">submit</button>
+        </fieldset>
+
+        </form>
+    </body>
+</html>
